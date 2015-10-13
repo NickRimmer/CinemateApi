@@ -11,10 +11,15 @@
 // 
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
-namespace CinemateApi
+namespace CinemateApi.Methods
 {
-    public class Manager
+    public class MovieMethod
     {
+        private Cinemate _cinemate;
 
+        public MovieMethod(Cinemate cinemate)
+        {
+            _cinemate = cinemate;
+        }
     }
 }

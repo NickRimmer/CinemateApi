@@ -45,7 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manager.cs" />
+    <Compile Include="Cinemate.cs" />
+    <Compile Include="Methods\MovieMethod.cs" />
     <Compile Include="Models\Remote\ImageModel.cs" />
     <Compile Include="Models\Remote\MovieInfoModel.cs" />
     <Compile Include="Models\Remote\MovieShortModel.cs" />
@@ -64,9 +65,7 @@
     <None Include="LICENSE" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Methods\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
