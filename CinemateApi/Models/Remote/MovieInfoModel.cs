@@ -40,9 +40,10 @@ namespace CinemateApi.Models.Remote
                 {
                     return DateTime.ParseExact(ReleaseDateWorldSource, "yyyy-MM-dd", CultureInfo.InvariantCulture);
                 }
-                catch (Exception ex)
+                catch //(Exception ex)
                 {
-                    throw new Exception("release_date_world parse error", ex);
+                    //throw new Exception("release_date_world parse error", ex);
+                    return null;
                 }
             }
         }
@@ -68,9 +69,10 @@ namespace CinemateApi.Models.Remote
                 {
                     return DateTime.ParseExact(ReleaseDateRussiaSource, "yyyy-MM-dd", CultureInfo.InvariantCulture);
                 }
-                catch (Exception ex)
+                catch //(Exception ex)
                 {
-                    throw new Exception("release_date_russia parse error", ex);
+                    //throw new Exception("release_date_russia parse error", ex);
+                    return null;
                 }
             }
         }

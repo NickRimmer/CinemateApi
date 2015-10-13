@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cinemate.cs" />
+    <Compile Include="Enums\MovieEnumsConverter.cs" />
+    <Compile Include="Enums\MovieOrderDirectionEnum.cs" />
+    <Compile Include="Enums\MovieStateEnum.cs" />
+    <Compile Include="Enums\MovieTypeEnum.cs" />
+    <Compile Include="Enums\MovieViewModeEnum.cs" />
+    <Compile Include="Enums\MovieOrderTargetEnum.cs" />
     <Compile Include="Methods\MovieMethod.cs" />
     <Compile Include="Models\Remote\ImageModel.cs" />
     <Compile Include="Models\Remote\MovieInfoModel.cs" />
@@ -60,6 +66,7 @@
     <Compile Include="Models\Response\MovieSearchResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\FixJsonListsConverter.cs" />
+    <Compile Include="Tools\RemoteHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LICENSE" />

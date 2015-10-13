@@ -12,17 +12,57 @@
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
 
+using System;
+using System.Threading;
 using CinemateApi.Methods;
 
 namespace CinemateApi
 {
+    /// <summary>
+    /// Main class for use Cinemate.cc API
+    /// </summary>
     public class Cinemate
     {
-        public MovieMethod Movie;
-
+        /// <summary>
+        /// Base url for requests
+        /// </summary>
         internal string BaseUrl { get; }
+
+        /// <summary>
+        /// Api key for access to API
+        /// </summary>
         internal string ApiKey { get; }
 
+        /// <summary>
+        /// Collection of "movie" methods
+        /// </summary>
+        public MovieMethod Movie;
+
+        #region cinemate.cc frequency limits
+        private const int MinWaitTimeMs = 1000;
+        private DateTime _lastTimeExecute = DateTime.MinValue;
+
+        internal TimeSpan WaitToNextExecute
+        {
+            get
+            {
+                var result = MinWaitTimeMs - ((DateTime.Now - _lastTimeExecute).TotalMilliseconds);
+                return TimeSpan.FromMilliseconds(result > 0 ? result : 0);
+            }
+        }
+
+        internal void BeginWaitForNextExecute()
+        {
+            Thread.Sleep(WaitToNextExecute);
+            _lastTimeExecute=DateTime.Now;
+        }
+        #endregion
+
+        /// <summary>
+        /// Main class for use Cinemate.cc API
+        /// </summary>
+        /// <param name="baseUrl">base url for requests</param>
+        /// <param name="apiKey">api key for access to API</param>
         public Cinemate(string baseUrl, string apiKey)
         {
             BaseUrl = baseUrl;

@@ -8,9 +8,9 @@ namespace CinemateApitTests
     public static class Constants
     {
         public static string 
-            BaseUrl = "http://api.cinemate.ccs",
+            BaseUrl = "http://api.cinemate.cc",
 
             //TODO set your api key here
-            ApiKey= "your_api_key";
+            ApiKey= "your_api_here";
     }
 }
