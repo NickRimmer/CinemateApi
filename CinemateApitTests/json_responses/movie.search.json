@@ -1,0 +1,37 @@
+﻿{
+    "movie": {
+        "kinopoisk": {
+            "rating": "8.619", 
+            "votes": "13640"
+        }, 
+        "url": "http://cinemate.cc/movie/78490/", 
+        "poster": {
+            "small": {
+                "url": "http://c.cinemate.cc/media/m/0/9/78490/0.small.jpg"
+            }, 
+            "big": {
+                "url": "http://c.cinemate.cc/media/m/0/9/78490/0.big.jpg"
+            }, 
+            "medium": {
+                "url": "http://c.cinemate.cc/media/m/0/9/78490/0.medium.jpg"
+            }
+        }, 
+        "title_original": "Jeeves and Wooster", 
+        "country": {
+            "name": "Великобритания"
+        }, 
+        "year_finish": 1993, 
+        "title_russian": "Дживс и Вустер", 
+        "year": 1990, 
+        "genre": {
+            "name": "комедия"
+        }, 
+        "imdb": {
+            "rating": "8.6", 
+            "votes": "7340"
+        }, 
+        "runtime": 55, 
+        "type": "serial", 
+        "id": 78490
+    }
+}

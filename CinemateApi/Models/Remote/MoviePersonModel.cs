@@ -12,17 +12,26 @@
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
 
-using System.Collections.Generic;
 using CinemateApi.Models.Remote;
-using CinemateApi.Tools;
 using Newtonsoft.Json;
 
-namespace CinemateApi.Models.Response
+namespace CinemateApi.Models.Remote
 {
-    public class MovieSearchResponseModel
+    public class MoviePersonModel
     {
-        [JsonProperty("movie")]
-        [JsonConverter(typeof(FixJsonListsConverter<MovieShortModel>))]
-        public List<MovieShortModel> Movie;
+        [JsonProperty("photo")]
+        public ImageModel Photo { get; set; }
+
+        [JsonProperty("id")]
+        public int Id { get; set; }
+
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+ 
     }
 }

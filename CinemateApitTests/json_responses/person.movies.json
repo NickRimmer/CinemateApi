@@ -1,0 +1,305 @@
+﻿{
+    "person": {
+        "name": "Хью Лори", 
+        "url": "http://cinemate.cc/person/2103/", 
+        "photo": {
+            "small": {
+                "url": "http://c.cinemate.cc/media/p/3/0/2103/0.small.jpg"
+            }, 
+            "big": {
+                "url": "http://c.cinemate.cc/media/p/3/0/2103/0.big.jpg"
+            }, 
+            "medium": {
+                "url": "http://c.cinemate.cc/media/p/3/0/2103/0.medium.jpg"
+            }
+        }, 
+        "name_original": "Hugh Laurie", 
+        "movies": {
+            "director": {
+                "movie": [
+                    {
+                        "kinopoisk": {
+                            "rating": "7.822", 
+                            "votes": "2643"
+                        }, 
+                        "url": "http://cinemate.cc/movie/131214/", 
+                        "poster": {
+                            "small": {
+                                "url": "http://c.cinemate.cc/media/m/4/1/131214/0_1.small.jpg"
+                            }, 
+                            "big": {
+                                "url": "http://c.cinemate.cc/media/m/4/1/131214/0_1.big.jpg"
+                            }, 
+                            "medium": {
+                                "url": "http://c.cinemate.cc/media/m/4/1/131214/0_1.medium.jpg"
+                            }
+                        }, 
+                        "title_original": "Fortysomething", 
+                        "country": {
+                            "name": "Великобритания"
+                        }, 
+                        "year_finish": 2003, 
+                        "title_russian": "Немного за сорок", 
+                        "year": 2003, 
+                        "genre": {
+                            "name": [
+                                "драма", 
+                                "комедия"
+                            ]
+                        }, 
+                        "imdb": {
+                            "rating": "7.8", 
+                            "votes": "1482"
+                        }, 
+                        "runtime": 60, 
+                        "type": "serial", 
+                        "id": 131214
+                    }, 
+                    {
+                        "kinopoisk": {
+                            "rating": "6.857", 
+                            "votes": "1550"
+                        }, 
+                        "url": "http://cinemate.cc/movie/178/", 
+                        "poster": {
+                            "small": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2000/178/1292319422.small.jpg"
+                            }, 
+                            "big": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2000/178/1292319422.big.jpg"
+                            }, 
+                            "medium": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2000/178/1292319422.medium.jpg"
+                            }
+                        }, 
+                        "title_original": "Maybe Baby", 
+                        "country": {
+                            "name": "Великобритания"
+                        }, 
+                        "imdb": {
+                            "rating": "5.7", 
+                            "votes": "4848"
+                        }, 
+                        "title_russian": "Все возможно, бэби!", 
+                        "year": 2000, 
+                        "genre": {
+                            "name": [
+                                "комедия", 
+                                "мелодрама"
+                            ]
+                        }, 
+                        "runtime": 104, 
+                        "type": "movie", 
+                        "id": 178
+                    }
+                ]
+            }, 
+            "actor": {
+                "movie": [
+                    {
+                        "kinopoisk": {
+                            "rating": "6.405", 
+                            "votes": "23879"
+                        }, 
+                        "url": "http://cinemate.cc/movie/137465/", 
+                        "poster": {
+                            "small": {
+                                "url": "http://c.cinemate.cc/media/m/5/6/137465/0_1.small.jpg"
+                            }, 
+                            "big": {
+                                "url": "http://c.cinemate.cc/media/m/5/6/137465/0_1.big.jpg"
+                            }, 
+                            "medium": {
+                                "url": "http://c.cinemate.cc/media/m/5/6/137465/0_1.medium.jpg"
+                            }
+                        }, 
+                        "title_original": "Tomorrowland", 
+                        "country": {
+                            "name": [
+                                "Испания", 
+                                "США"
+                            ]
+                        }, 
+                        "imdb": {
+                            "rating": "6.6", 
+                            "votes": "61508"
+                        }, 
+                        "title_russian": "Земля будущего", 
+                        "year": 2015, 
+                        "genre": {
+                            "name": [
+                                "боевик", 
+                                "детектив", 
+                                "приключения", 
+                                "семейный", 
+                                "фантастика"
+                            ]
+                        }, 
+                        "runtime": 130, 
+                        "type": "movie", 
+                        "id": 137465
+                    }, 
+                    {
+                        "kinopoisk": {
+                            "rating": "7.273", 
+                            "votes": "995"
+                        }, 
+                        "url": "http://cinemate.cc/movie/152749/", 
+                        "poster": {
+                            "small": {
+                                "url": "http://c.cinemate.cc/media/m/9/4/152749/0_1.small.jpg"
+                            }, 
+                            "big": {
+                                "url": "http://c.cinemate.cc/media/m/9/4/152749/0_1.big.jpg"
+                            }, 
+                            "medium": {
+                                "url": "http://c.cinemate.cc/media/m/9/4/152749/0_1.medium.jpg"
+                            }
+                        }, 
+                        "title_original": "Mr. Pip", 
+                        "country": {
+                            "name": [
+                                "Австралия", 
+                                "Новая Зеландия", 
+                                "Папуа-Новая Гвинея"
+                            ]
+                        }, 
+                        "imdb": {
+                            "rating": "7.2", 
+                            "votes": "2051"
+                        }, 
+                        "title_russian": "Мистер Пип", 
+                        "year": 2012, 
+                        "genre": {
+                            "name": [
+                                "военный", 
+                                "драма"
+                            ]
+                        }, 
+                        "runtime": 116, 
+                        "type": "movie", 
+                        "id": 152749
+                    }, 
+                    {
+                        "kinopoisk": {
+                            "rating": "6.096", 
+                            "votes": "134"
+                        }, 
+                        "url": "http://cinemate.cc/movie/106028/", 
+                        "poster": {
+                            "small": {
+                                "url": "http://c.cinemate.cc/media/m/8/2/106028/0.small.jpg"
+                            }, 
+                            "big": {
+                                "url": "http://c.cinemate.cc/media/m/8/2/106028/0.big.jpg"
+                            }, 
+                            "medium": {
+                                "url": "http://c.cinemate.cc/media/m/8/2/106028/0.medium.jpg"
+                            }
+                        }, 
+                        "title_original": "Shrek's Thrilling Tales", 
+                        "country": {
+                            "name": "США"
+                        }, 
+                        "imdb": {
+                            "rating": "6.4", 
+                            "votes": "173"
+                        }, 
+                        "title_russian": "Захватывающие рассказы Шрэка", 
+                        "year": 2012, 
+                        "genre": {
+                            "name": [
+                                "короткометражка", 
+                                "мультфильм"
+                            ]
+                        }, 
+                        "runtime": 31, 
+                        "type": "video", 
+                        "id": 106028
+                    }, 
+                    {
+                        "kinopoisk": {
+                            "rating": "6.304", 
+                            "votes": "5246"
+                        }, 
+                        "url": "http://cinemate.cc/movie/109714/", 
+                        "poster": {
+                            "small": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2011/109714/1353767732.small.jpg"
+                            }, 
+                            "big": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2011/109714/1353767732.big.jpg"
+                            }, 
+                            "medium": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2011/109714/1353767732.medium.jpg"
+                            }
+                        }, 
+                        "title_original": "The Oranges", 
+                        "country": {
+                            "name": "США"
+                        }, 
+                        "imdb": {
+                            "rating": "5.9", 
+                            "votes": "9299"
+                        }, 
+                        "title_russian": "Любовный переплет", 
+                        "year": 2011, 
+                        "genre": {
+                            "name": [
+                                "драма", 
+                                "комедия", 
+                                "мелодрама"
+                            ]
+                        }, 
+                        "runtime": 90, 
+                        "type": "movie", 
+                        "id": 109714
+                    }, 
+                    {
+                        "kinopoisk": {
+                            "rating": "7.540", 
+                            "votes": "17489"
+                        }, 
+                        "url": "http://cinemate.cc/movie/76679/", 
+                        "poster": {
+                            "small": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2011/76679/1303976184.small.jpg"
+                            }, 
+                            "big": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2011/76679/1303976184.big.jpg"
+                            }, 
+                            "medium": {
+                                "url": "http://c.cinemate.cc/media/images/poster/2011/76679/1303976184.medium.jpg"
+                            }
+                        }, 
+                        "title_original": "Arthur Christmas", 
+                        "country": {
+                            "name": [
+                                "Великобритания", 
+                                "США"
+                            ]
+                        }, 
+                        "imdb": {
+                            "rating": "7.1", 
+                            "votes": "32066"
+                        }, 
+                        "title_russian": "Секретная служба Санта-Клауса", 
+                        "year": 2011, 
+                        "genre": {
+                            "name": [
+                                "драма", 
+                                "комедия", 
+                                "мультфильм", 
+                                "семейный"
+                            ]
+                        }, 
+                        "runtime": 97, 
+                        "type": "movie", 
+                        "id": 76679
+                    }
+                ]
+            }
+        }, 
+        "id": 2103
+    }
+}

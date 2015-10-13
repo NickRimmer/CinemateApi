@@ -26,7 +26,7 @@ namespace CinemateApi.Models.Remote
         public RatingModel RateKinopoisk { get; set; }
 
         [JsonProperty("director")]
-        public PersonsListModel Director { get; set; }
+        public MoviePersonsListModel Director { get; set; }
 
         [JsonProperty("release_date_world")]
         public string ReleaseDateWorldSource { get; set; }
@@ -84,7 +84,7 @@ namespace CinemateApi.Models.Remote
         public NamesListModel Country { get; set; }
 
         [JsonProperty("cast")]
-        public PersonsListModel Cast { get; set; }
+        public MoviePersonsListModel Cast { get; set; }
 
         [JsonProperty("imdb")]
         public RatingModel Imdb { get; set; }

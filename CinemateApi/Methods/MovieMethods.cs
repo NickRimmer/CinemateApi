@@ -25,7 +25,7 @@ namespace CinemateApi.Methods
     /// <summary>
     /// Collection of "movie" methods
     /// </summary>
-    public class MovieMethod
+    public class MovieMethods
     {
         private Cinemate _cinemate;
 
@@ -33,7 +33,7 @@ namespace CinemateApi.Methods
         /// Collection of "movie" methods
         /// </summary>
         /// <param name="cinemate">instance of <see cref="Cinemate"/>, with prepared preferences</param>
-        public MovieMethod(Cinemate cinemate)
+        public MovieMethods(Cinemate cinemate)
         {
             _cinemate = cinemate;
         }

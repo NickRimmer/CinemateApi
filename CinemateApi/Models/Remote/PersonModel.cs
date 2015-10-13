@@ -12,7 +12,6 @@
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
 
-using CinemateApi.Models.Remote;
 using Newtonsoft.Json;
 
 namespace CinemateApi.Models.Remote
@@ -28,10 +27,15 @@ namespace CinemateApi.Models.Remote
         [JsonProperty("name")]
         public string Name { get; set; }
 
+        [JsonProperty("name_original")]
+        public string NameOrigin { get; set; }
+
+        [JsonProperty("url")]
+        public string Url { get; set; }
+
         public override string ToString()
         {
             return Name;
         }
- 
     }
 }

@@ -12,26 +12,14 @@
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
 
-using System.Collections.Generic;
-using System.Linq;
-using CinemateApi.Tools;
+using CinemateApi.Models.Remote;
 using Newtonsoft.Json;
 
-namespace CinemateApi.Models.Remote
+namespace CinemateApi.Models.Response
 {
-    public class PersonsListModel
+    public class PersonInfoResponseModel
     {
         [JsonProperty("person")]
-        [JsonConverter(typeof(FixJsonListsConverter<PersonModel>))]
-        public List<PersonModel> Person { get; set; }
-
-        public override string ToString()
-        {
-            if (Person == null) return null;
-            if (!Person.Any()) return null;
-
-            return Person.Aggregate(string.Empty, (c, i) => c + (c.Equals(string.Empty) ? string.Empty : ", ") + i);
-        }
- 
+        public PersonModel Person;
     }
 }

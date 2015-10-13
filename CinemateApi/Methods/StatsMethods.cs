@@ -21,7 +21,7 @@ namespace CinemateApi.Methods
     /// <summary>
     /// Collection of "stats" methods
     /// </summary>
-    public class StatsMethod
+    public class StatsMethods
     {
         private Cinemate _cinemate;
 
@@ -29,11 +29,16 @@ namespace CinemateApi.Methods
         /// Collection of "stats" methods
         /// </summary>
         /// <param name="cinemate">instance of <see cref="Cinemate"/>, with prepared preferences</param>
-        public StatsMethod(Cinemate cinemate)
+        public StatsMethods(Cinemate cinemate)
         {
             _cinemate = cinemate;
         }
 
+        #region "stats.new" method
+        /// <summary>
+        /// Api info: http://cinemate.cc/help/api/stats.new/
+        /// </summary>
+        /// <returns></returns>
         public StatsNewResponseModel GetNew()
         {
             var args = new Dictionary<string, object>();
@@ -41,5 +46,6 @@ namespace CinemateApi.Methods
             _cinemate.BeginWaitForNextExecute();
             return RemoteHelper.DownloadJson<StatsNewResponseModel>(_cinemate.BaseUrl, "stats.new", args);
         }
+        #endregion
     }
 }

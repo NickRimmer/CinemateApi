@@ -19,10 +19,10 @@ using Newtonsoft.Json;
 
 namespace CinemateApi.Models.Response
 {
-    public class MovieSearchResponseModel
+    public class PersonSearchResponseModel
     {
-        [JsonProperty("movie")]
-        [JsonConverter(typeof(FixJsonListsConverter<MovieShortModel>))]
-        public List<MovieShortModel> Movie;
+        [JsonProperty("person")]
+        [JsonConverter(typeof(FixJsonListsConverter<PersonModel>))]
+        public List<PersonModel> Person;
     }
 }

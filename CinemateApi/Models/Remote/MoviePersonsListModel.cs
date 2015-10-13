@@ -13,16 +13,25 @@
 #endregion
 
 using System.Collections.Generic;
-using CinemateApi.Models.Remote;
+using System.Linq;
 using CinemateApi.Tools;
 using Newtonsoft.Json;
 
-namespace CinemateApi.Models.Response
+namespace CinemateApi.Models.Remote
 {
-    public class MovieSearchResponseModel
+    public class MoviePersonsListModel
     {
-        [JsonProperty("movie")]
-        [JsonConverter(typeof(FixJsonListsConverter<MovieShortModel>))]
-        public List<MovieShortModel> Movie;
+        [JsonProperty("person")]
+        [JsonConverter(typeof(FixJsonListsConverter<MoviePersonModel>))]
+        public List<MoviePersonModel> Person { get; set; }
+
+        public override string ToString()
+        {
+            if (Person == null) return null;
+            if (!Person.Any()) return null;
+
+            return Person.Aggregate(string.Empty, (c, i) => c + (c.Equals(string.Empty) ? string.Empty : ", ") + i);
+        }
+ 
     }
 }

@@ -14,15 +14,13 @@
 
 using System.Collections.Generic;
 using CinemateApi.Models.Remote;
-using CinemateApi.Tools;
 using Newtonsoft.Json;
 
 namespace CinemateApi.Models.Response
 {
-    public class MovieSearchResponseModel
+    public class PersonMoviesResponseModel
     {
-        [JsonProperty("movie")]
-        [JsonConverter(typeof(FixJsonListsConverter<MovieShortModel>))]
-        public List<MovieShortModel> Movie;
+        [JsonProperty("person")]
+        public PersonWithMoviesModel Person;
     }
 }

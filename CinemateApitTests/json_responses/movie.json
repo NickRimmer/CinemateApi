@@ -1,0 +1,122 @@
+﻿{
+    "movie": {
+        "kinopoisk": {
+            "rating": "8.619", 
+            "votes": "13640"
+        }, 
+        "director": {
+            "person": [
+                {
+                    "photo": {
+                        "small": {
+                            "url": "http://c.cinemate.cc/media/p/1/6/46561/0.small.jpg"
+                        }, 
+                        "big": {
+                            "url": "http://c.cinemate.cc/media/p/1/6/46561/0.big.jpg"
+                        }, 
+                        "medium": {
+                            "url": "http://c.cinemate.cc/media/p/1/6/46561/0.medium.jpg"
+                        }
+                    }, 
+                    "id": "46561", 
+                    "name": "Роберт Янг"
+                }, 
+                {
+                    "photo": {
+                        "small": {
+                            "url": "http://c.cinemate.cc/media/images/photo/f/74165/1377286340.small.jpg"
+                        }, 
+                        "big": {
+                            "url": "http://c.cinemate.cc/media/images/photo/f/74165/1377286340.big.jpg"
+                        }, 
+                        "medium": {
+                            "url": "http://c.cinemate.cc/media/images/photo/f/74165/1377286340.medium.jpg"
+                        }
+                    }, 
+                    "id": "74165", 
+                    "name": "Фердинанд Фэйрфакс"
+                }, 
+                {
+                    "photo": {
+                        "small": {
+                            "url": "http://c.cinemate.cc/media/images/photo/s/78179/1377330812.small.jpg"
+                        }, 
+                        "big": {
+                            "url": "http://c.cinemate.cc/media/images/photo/s/78179/1377330812.big.jpg"
+                        }, 
+                        "medium": {
+                            "url": "http://c.cinemate.cc/media/images/photo/s/78179/1377330812.medium.jpg"
+                        }
+                    }, 
+                    "id": "78179", 
+                    "name": "Саймон Лэнгтон"
+                }
+            ]
+        }, 
+        "description": "Великобритания, конец 1920-х. Главные герои — недалекий, хорошо воспитанный отпрыск аристократического семейства Берти Вустер и его хитроумный камердинер Дживс. Беспечный прожигатель жизни, Вустер вечно попадает в нелепые ситуации, но всякий раз на выручку приходит мудрый и всезнающий Дживс. Властные тетушки и жадные девицы на выданье — таков основной круг опасностей, подстерегающих молодых господ. Но на то им и слуги, чтобы помогать и советом, и делом. По возможности невозмутимо. Ведь и они настоящие британцы. смотрите на Cinemate.cc", 
+        "url": "http://cinemate.cc/movie/78490/", 
+        "poster": {
+            "small": {
+                "url": "http://c.cinemate.cc/media/m/0/9/78490/0.small.jpg"
+            }, 
+            "big": {
+                "url": "http://c.cinemate.cc/media/m/0/9/78490/0.big.jpg"
+            }, 
+            "medium": {
+                "url": "http://c.cinemate.cc/media/m/0/9/78490/0.medium.jpg"
+            }
+        }, 
+        "title_original": "Jeeves and Wooster", 
+        "country": {
+            "name": "Великобритания"
+        }, 
+        "cast": {
+            "person": [
+                {
+                    "photo": {
+                        "small": {
+                            "url": "http://c.cinemate.cc/media/p/3/0/2103/0.small.jpg"
+                        }, 
+                        "big": {
+                            "url": "http://c.cinemate.cc/media/p/3/0/2103/0.big.jpg"
+                        }, 
+                        "medium": {
+                            "url": "http://c.cinemate.cc/media/p/3/0/2103/0.medium.jpg"
+                        }
+                    }, 
+                    "id": "2103", 
+                    "name": "Хью Лори"
+                }, 
+                {
+                    "photo": {
+                        "small": {
+                            "url": "http://c.cinemate.cc/media/images/photo/s/12720/1290595520.small.jpg"
+                        }, 
+                        "big": {
+                            "url": "http://c.cinemate.cc/media/images/photo/s/12720/1290595520.big.jpg"
+                        }, 
+                        "medium": {
+                            "url": "http://c.cinemate.cc/media/images/photo/s/12720/1290595520.medium.jpg"
+                        }
+                    }, 
+                    "id": "12720", 
+                    "name": "Стивен Фрай"
+                }
+            ]
+        }, 
+        "year_finish": 1993, 
+        "title_russian": "Дживс и Вустер", 
+        "year": 1990, 
+        "genre": {
+            "name": "комедия"
+        }, 
+        "imdb": {
+            "rating": "8.6", 
+            "votes": "7340"
+        }, 
+        "runtime": 55, 
+        "type": "serial", 
+        "id": 78490, 
+        "release_date_world": "1990-04-22"
+    }
+}

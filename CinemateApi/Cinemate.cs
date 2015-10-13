@@ -36,12 +36,17 @@ namespace CinemateApi
         /// <summary>
         /// Collection of "movie" methods
         /// </summary>
-        public MovieMethod Movie;
+        public MovieMethods Movie;
 
         /// <summary>
         /// Collection of "stats" methods
         /// </summary>
-        public StatsMethod Stats;
+        public StatsMethods Stats;
+
+        /// <summary>
+        /// Collection of "person" methods
+        /// </summary>
+        public PersonMethods Person;
 
         #region cinemate.cc frequency limits
         private const int MinWaitTimeMs = 1000;
@@ -73,8 +78,9 @@ namespace CinemateApi
             BaseUrl = baseUrl;
             ApiKey = apiKey;
 
-            Movie = new MovieMethod(this);
-            Stats = new StatsMethod(this);
+            Movie = new MovieMethods(this);
+            Stats = new StatsMethods(this);
+            Person = new PersonMethods(this);
         }
 
     }
