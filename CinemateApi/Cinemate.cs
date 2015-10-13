@@ -38,6 +38,11 @@ namespace CinemateApi
         /// </summary>
         public MovieMethod Movie;
 
+        /// <summary>
+        /// Collection of "stats" methods
+        /// </summary>
+        public StatsMethod Stats;
+
         #region cinemate.cc frequency limits
         private const int MinWaitTimeMs = 1000;
         private DateTime _lastTimeExecute = DateTime.MinValue;
@@ -68,7 +73,8 @@ namespace CinemateApi
             BaseUrl = baseUrl;
             ApiKey = apiKey;
 
-            Movie=new MovieMethod(this);
+            Movie = new MovieMethod(this);
+            Stats = new StatsMethod(this);
         }
 
     }

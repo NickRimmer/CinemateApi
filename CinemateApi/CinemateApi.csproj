@@ -53,6 +53,7 @@
     <Compile Include="Enums\MovieViewModeEnum.cs" />
     <Compile Include="Enums\MovieOrderTargetEnum.cs" />
     <Compile Include="Methods\MovieMethod.cs" />
+    <Compile Include="Methods\StatsMethod.cs" />
     <Compile Include="Models\Remote\ImageModel.cs" />
     <Compile Include="Models\Remote\MovieInfoModel.cs" />
     <Compile Include="Models\Remote\MovieShortModel.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Models\Response\MovieInfoResponseModel.cs" />
     <Compile Include="Models\Response\MovieListResponseModel.cs" />
     <Compile Include="Models\Response\MovieSearchResponseModel.cs" />
+    <Compile Include="Models\Response\StatsNewResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\FixJsonListsConverter.cs" />
     <Compile Include="Tools\RemoteHelper.cs" />
