@@ -17,7 +17,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
-using CinemateApi.Enums;
 using Newtonsoft.Json;
 
 namespace CinemateApi.Tools
@@ -36,9 +35,8 @@ namespace CinemateApi.Tools
         /// <param name="baseUrl">host</param>
         /// <param name="path">path</param>
         /// <param name="arguments">some arguments in Dictionary</param>
-        /// <param name="sendMethod">http method for download json</param>
-        /// <returns>parsed and converted json to mode  l</returns>
-        public static T DownloadJson<T>(string baseUrl, string path, Dictionary<string, object> arguments, HttpMethodEnum sendMethod=HttpMethodEnum.Get)
+        /// <returns>parsed and converted json to model</returns>
+        public static T DownloadJson<T>(string baseUrl, string path, Dictionary<string, object> arguments)
         {
             //small trick if forgot
             if (!arguments.ContainsKey("format"))
@@ -58,17 +56,7 @@ namespace CinemateApi.Tools
 
                 try
                 {
-                    string jsonString = null;
-
-                    if(sendMethod==HttpMethodEnum.Get)
-                        jsonString = browser.DownloadString(uriBuilder.Uri);
-                    else if (sendMethod == HttpMethodEnum.Post)
-                        jsonString = browser.UploadString(uriBuilder.Uri, uriBuilder.Query);
-                    if (sendMethod == HttpMethodEnum.Delete)
-                        jsonString = browser.UploadString(uriBuilder.Uri, "DELETE", uriBuilder.Query);
-
-                    if(string.IsNullOrWhiteSpace(jsonString)) throw new Exception("can't download json string");
-
+                    var jsonString = browser.DownloadString(uriBuilder.Uri);
                     return JsonConvert.DeserializeObject<T>(jsonString);
                 }
                 catch (Exception ex)

@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cinemate.cs" />
-    <Compile Include="Enums\HttpMethodEnum.cs" />
     <Compile Include="Enums\MovieEnumsConverter.cs" />
     <Compile Include="Enums\MovieOrderDirectionEnum.cs" />
     <Compile Include="Enums\MovieStateEnum.cs" />
