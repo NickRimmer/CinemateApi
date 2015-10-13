@@ -64,7 +64,7 @@ namespace CinemateApi.Tools
                         jsonString = browser.DownloadString(uriBuilder.Uri);
                     else if (sendMethod == HttpMethodEnum.Post)
                         jsonString = browser.UploadString(uriBuilder.Uri, uriBuilder.Query);
-                    if (sendMethod == HttpMethodEnum.Delete)
+                    else if (sendMethod == HttpMethodEnum.Delete)
                         jsonString = browser.UploadString(uriBuilder.Uri, "DELETE", uriBuilder.Query);
 
                     if(string.IsNullOrWhiteSpace(jsonString)) throw new Exception("can't download json string");

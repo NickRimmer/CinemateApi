@@ -21,7 +21,7 @@ namespace CinemateApitTests
     public class PersonTests
     {
         [TestMethod]
-        public void GetSearch_Test()
+        public void Person_GetSearch_Test()
         {
             var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
 
@@ -33,7 +33,7 @@ namespace CinemateApitTests
         }
 
         [TestMethod]
-        public void GetMovies_Test()
+        public void Person_GetMovies_Test()
         {
             var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
 
@@ -45,7 +45,7 @@ namespace CinemateApitTests
         }
 
         [TestMethod]
-        public void GetInfo_Test()
+        public void Person_GetInfo_Test()
         {
             var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
 

@@ -48,6 +48,11 @@ namespace CinemateApi
         /// </summary>
         public PersonMethods Person;
 
+        /// <summary>
+        /// Collection of "acount" methods
+        /// </summary>
+        public AccountMethods Account;
+
         #region cinemate.cc frequency limits
         private const int MinWaitTimeMs = 1000;
         private DateTime _lastTimeExecute = DateTime.MinValue;
@@ -73,7 +78,7 @@ namespace CinemateApi
         /// </summary>
         /// <param name="baseUrl">base url for requests</param>
         /// <param name="apiKey">api key for access to API</param>
-        public Cinemate(string baseUrl, string apiKey)
+        public Cinemate(string baseUrl, string apiKey=null)
         {
             BaseUrl = baseUrl;
             ApiKey = apiKey;
@@ -81,6 +86,7 @@ namespace CinemateApi
             Movie = new MovieMethods(this);
             Stats = new StatsMethods(this);
             Person = new PersonMethods(this);
+            Account = new AccountMethods(this);
         }
 
     }

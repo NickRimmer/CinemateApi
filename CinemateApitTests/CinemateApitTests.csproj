@@ -59,6 +59,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AccountTests.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="MovieTests.cs" />
     <Compile Include="PersonTests.cs" />
@@ -66,6 +67,8 @@
     <Compile Include="StatsTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="json_responses\account.auth.fail.json" />
+    <None Include="json_responses\account.auth.json" />
     <None Include="json_responses\movie.json" />
     <None Include="json_responses\movie.list.json" />
     <None Include="json_responses\movie.search.json" />

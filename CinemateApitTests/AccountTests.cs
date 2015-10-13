@@ -12,20 +12,23 @@
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
 
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CinemateApitTests
 {
     [TestClass]
-    public class StatsTests
+    public class AccountTests
     {
         [TestMethod]
-        public void Stats_GetNew_Test()
+        public void Account_GetAuth_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl);
 
-            var result = cinemate.Stats.GetNew();
-            Assert.IsNotNull(result, "result stats.new is empty");
+            var result = cinemate.Account.GetAuth(Constants.UserName, Constants.Password);
+
+            Assert.IsNotNull(result.PassKey, "passkey is empty");
+            Console.WriteLine("passkey: {0}", result.PassKey);
         }
     }
 }

@@ -53,6 +53,7 @@
     <Compile Include="Enums\MovieTypeEnum.cs" />
     <Compile Include="Enums\MovieViewModeEnum.cs" />
     <Compile Include="Enums\MovieOrderTargetEnum.cs" />
+    <Compile Include="Methods\AccountMethods.cs" />
     <Compile Include="Methods\MovieMethods.cs" />
     <Compile Include="Methods\PersonMethods.cs" />
     <Compile Include="Methods\StatsMethods.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Models\Remote\PersonWithMoviesModel.cs" />
     <Compile Include="Models\Remote\RatingModel.cs" />
     <Compile Include="Models\Remote\UrlModel.cs" />
+    <Compile Include="Models\Response\AccountResponseModel.cs" />
     <Compile Include="Models\Response\MovieInfoResponseModel.cs" />
     <Compile Include="Models\Response\MovieListResponseModel.cs" />
     <Compile Include="Models\Response\MovieSearchResponseModel.cs" />

@@ -12,20 +12,13 @@
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
 
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json;
 
-namespace CinemateApitTests
+namespace CinemateApi.Models.Response
 {
-    [TestClass]
-    public class StatsTests
+    public class AccountResponseModel
     {
-        [TestMethod]
-        public void Stats_GetNew_Test()
-        {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
-
-            var result = cinemate.Stats.GetNew();
-            Assert.IsNotNull(result, "result stats.new is empty");
-        }
+        [JsonProperty("passkey")]
+        public string PassKey;
     }
 }

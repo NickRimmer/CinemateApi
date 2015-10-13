@@ -10,7 +10,13 @@ namespace CinemateApitTests
         public static string 
             BaseUrl = "http://api.cinemate.cc",
 
-            //TODO set your api key here
-            ApiKey= "your_api_here";
+            //TODO set your api key
+            ApiKey = "your_api_key",
+            
+            //TODO set your user name
+            UserName = "your_user_name",
+            
+            //TODO set your password
+            Password = "your_password";
     }
 }
