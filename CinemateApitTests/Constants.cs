@@ -5,12 +5,12 @@ using System.Text;
 
 namespace CinemateApitTests
 {
-    public class Constants
+    public static class Constants
     {
-        public string 
+        public static string 
             BaseUrl = "http://api.cinemate.ccs",
 
             //TODO set your api key here
-            ApiKey="api_key";
+            ApiKey= "your_api_key";
     }
 }

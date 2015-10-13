@@ -21,7 +21,7 @@ namespace CinemateApitTests
     {
         public void MovieList_Test()
         {
-            
+            var cinemate = new CinemateApi.Cinemate();
         }
     }
 }
