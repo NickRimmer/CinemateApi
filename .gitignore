@@ -140,9 +140,6 @@ packages/*
 # (and the packages folder if the line above has been uncommented)
 !packages/build/
 
-#exclude nuget repair tools
-!.nuget/
-
 # Windows Azure Build Output
 csx/
 *.build.csdef
