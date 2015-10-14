@@ -69,6 +69,10 @@
   <ItemGroup>
     <None Include="json_responses\account.auth.fail.json" />
     <None Include="json_responses\account.auth.json" />
+    <None Include="json_responses\account.moviebox.json" />
+    <None Include="json_responses\account.profile.json" />
+    <None Include="json_responses\account.vote.json" />
+    <None Include="json_responses\account.watchlist.json" />
     <None Include="json_responses\movie.json" />
     <None Include="json_responses\movie.list.json" />
     <None Include="json_responses\movie.search.json" />

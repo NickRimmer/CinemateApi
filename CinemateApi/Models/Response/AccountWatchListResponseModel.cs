@@ -12,18 +12,17 @@
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
 
+using System.Collections.Generic;
 using CinemateApi.Models.Remote;
+using CinemateApi.Tools;
 using Newtonsoft.Json;
 
-namespace CinemateApi.Models.Remote
+namespace CinemateApi.Models.Response
 {
-    public class Image2Model
+    public class AccountWatchListResponseModel
     {
-        [JsonProperty("small")]
-        public UrlModel Small { get; set; }
-
-        [JsonProperty("big")]
-        public UrlModel Big { get; set; }
- 
+        [JsonProperty("movie")]
+        [JsonConverter(typeof(FixJsonListsConverter<AccountWatchModel>))]
+        public List<AccountWatchModel> Movie;
     }
 }

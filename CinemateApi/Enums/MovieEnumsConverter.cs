@@ -21,7 +21,7 @@ namespace CinemateApi.Enums
                     return "sort";
 
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(value), value, null);
+                    throw new ArgumentOutOfRangeException(value.ToString(), value, null);
             }
         }
 
@@ -36,7 +36,7 @@ namespace CinemateApi.Enums
                     return "desc";
 
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(value), value, null);
+                    throw new ArgumentOutOfRangeException(value.ToString(), value, null);
             }
         }
 
@@ -54,7 +54,7 @@ namespace CinemateApi.Enums
                     return "ru_release_date";
 
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(value), value, null);
+                    throw new ArgumentOutOfRangeException(value.ToString(), value, null);
             }
         }
 
@@ -69,7 +69,7 @@ namespace CinemateApi.Enums
                     return "soon";
 
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(value), value, null);
+                    throw new ArgumentOutOfRangeException(value.ToString(), value, null);
             }
         }
 
@@ -81,7 +81,28 @@ namespace CinemateApi.Enums
                     return "best";
                     
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(value), value, null);
+                    throw new ArgumentOutOfRangeException(value.ToString(), value, null);
+            }
+        }
+
+        public static MovieTypeEnum GetMovieTypeEnum(string value)
+        {
+            switch (value.ToLower().Trim())
+            {
+                case "movie":
+                case "movies":
+                    return MovieTypeEnum.Movie;
+
+                case "serial":
+                case "serials":
+                    return MovieTypeEnum.Serial;
+                
+                case "short":
+                case "shorts":
+                    return MovieTypeEnum.Short;
+
+                default:
+                    throw new ArgumentOutOfRangeException(value, value, null);
             }
         }
     }

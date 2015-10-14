@@ -1,0 +1,48 @@
+﻿{
+    "vote": [
+        {
+            "date": "2015-10-14 07:55:37",
+            "movie": {
+                "url": "http://cinemate.cc/movie/157582/",
+                "poster": {
+                    "small": {
+                        "url": "http://c.cinemate.cc/media/m/2/8/157582/0.small.jpg"
+                    },
+                    "big": {
+                        "url": "http://c.cinemate.cc/media/m/2/8/157582/0.big.jpg"
+                    },
+                    "medium": {
+                        "url": "http://c.cinemate.cc/media/m/2/8/157582/0.medium.jpg"
+                    }
+                },
+                "title_russian": "Душа шпиона",
+                "year": 2015,
+                "type": "movie",
+                "id": 157582
+            },
+            "value": -1
+        },
+        {
+            "date": "2015-10-12 22:48:08",
+            "movie": {
+                "url": "http://cinemate.cc/movie/155013/",
+                "poster": {
+                    "small": {
+                        "url": "http://c.cinemate.cc/media/m/3/1/155013/0_2.small.jpg"
+                    },
+                    "big": {
+                        "url": "http://c.cinemate.cc/media/m/3/1/155013/0_2.big.jpg"
+                    },
+                    "medium": {
+                        "url": "http://c.cinemate.cc/media/m/3/1/155013/0_2.medium.jpg"
+                    }
+                },
+                "title_russian": "Марсианин",
+                "year": 2015,
+                "type": "movie",
+                "id": 155013
+            },
+            "value": 1
+        }
+    ]
+}

@@ -26,12 +26,12 @@ namespace CinemateApi
         /// <summary>
         /// Base url for requests
         /// </summary>
-        internal string BaseUrl { get; }
+        internal string BaseUrl { get; private set; }
 
         /// <summary>
         /// Api key for access to API
         /// </summary>
-        internal string ApiKey { get; }
+        internal string ApiKey { get; private set; }
 
         /// <summary>
         /// Collection of "movie" methods

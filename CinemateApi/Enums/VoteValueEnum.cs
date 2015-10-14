@@ -11,19 +11,15 @@
 // 
 // License: http://opensource.org/licenses/GPL-2.0
 #endregion
-
-using CinemateApi.Models.Remote;
-using Newtonsoft.Json;
-
-namespace CinemateApi.Models.Remote
+namespace CinemateApi.Enums
 {
-    public class Image2Model
+    /// <summary>
+    /// Vote types
+    /// </summary>
+    public enum VoteValueEnum : short
     {
-        [JsonProperty("small")]
-        public UrlModel Small { get; set; }
-
-        [JsonProperty("big")]
-        public UrlModel Big { get; set; }
- 
+        Negative = -1,
+        NotSet = 0,
+        Positive = 1
     }
 }

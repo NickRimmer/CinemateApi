@@ -1,0 +1,23 @@
+﻿{
+    "username": "...", 
+    "subscription_count": 0, 
+    "review_count": 0, 
+    "bronze_badges": 1, 
+    "unread_updatelist_count": 0, 
+    "movieseen_time": "2 часа 21 минуту", 
+    "unread_pm_count": 0, 
+    "silver_badges": 0, 
+    "gold_badges": 0, 
+    "reputation": 1, 
+    "avatar": {
+        "small": {
+            "url": "http://c.cinemate.cc/media/images/avatars/blank.small.jpg"
+        }, 
+        "big": {
+            "url": "http://c.cinemate.cc/media/images/avatars/blank.big.jpg"
+        }
+    }, 
+    "movieseen_count": 1, 
+    "active": true, 
+    "unread_forum_count": 0
+}
