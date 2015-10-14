@@ -11,12 +11,12 @@ namespace CinemateApitTests
             BaseUrl = "http://api.cinemate.cc",
 
             //TODO set your api key
-            ApiKey = "7ae72591a0949c78a3fcfb344ec9685cafd02ac0",
+            ApiKey = "your_api_key",
             
             //TODO set your user name
-            UserName = "NickRimmer",
+            UserName = "your_user_name",
             
             //TODO set your password
-            Password = "qweqwe";
+            Password = "your_password";
     }
 }
