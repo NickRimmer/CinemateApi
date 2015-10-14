@@ -1,5 +1,5 @@
 # CinemateApi
-C# library for use cinemate.cc Api
+C# library for use cinemate.cc Api. How to use you can found here: https://github.com/NickRimmer/CinemateApi/wiki
 
 # Progress
 Project in work... (;
@@ -7,7 +7,7 @@ Project in work... (;
 ---
 
 # CinemateApi
-C# библиотека для использования Api cinemate.cc
+C# библиотека для использования Api cinemate.cc. Общее описание как использовать, тут: https://github.com/NickRimmer/CinemateApi/wiki/Главная
 
 # Progress
 Проект еще допиливается... (=
