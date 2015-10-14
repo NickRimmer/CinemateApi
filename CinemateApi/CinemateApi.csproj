@@ -58,6 +58,7 @@
     <Compile Include="Methods\MovieMethods.cs" />
     <Compile Include="Methods\PersonMethods.cs" />
     <Compile Include="Methods\StatsMethods.cs" />
+    <Compile Include="Models\Remote\AccountUpdateListItemModel.cs" />
     <Compile Include="Models\Remote\AccountVoteModel.cs" />
     <Compile Include="Models\Remote\Image2Model.cs" />
     <Compile Include="Models\Remote\ImageModel.cs" />
@@ -72,11 +73,13 @@
     <Compile Include="Models\Remote\PersonMoviesModel.cs" />
     <Compile Include="Models\Remote\PersonWithMoviesModel.cs" />
     <Compile Include="Models\Remote\RatingModel.cs" />
+    <Compile Include="Models\Remote\AccountUpdateObjectModel.cs" />
     <Compile Include="Models\Remote\UrlModel.cs" />
     <Compile Include="Models\Remote\AccountWatchModel.cs" />
     <Compile Include="Models\Response\AccountMovieBoxResponseModel.cs" />
     <Compile Include="Models\Response\AccountProfileResponseModel.cs" />
     <Compile Include="Models\Response\AccountResponseModel.cs" />
+    <Compile Include="Models\Response\AccountUpdateListResponseModel.cs" />
     <Compile Include="Models\Response\AccountVoteResponseModel.cs" />
     <Compile Include="Models\Response\MovieInfoResponseModel.cs" />
     <Compile Include="Models\Response\MovieListResponseModel.cs" />

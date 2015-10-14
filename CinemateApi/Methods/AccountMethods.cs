@@ -71,14 +71,13 @@ namespace CinemateApi.Methods
         }
         #endregion
 
-        #region "account.updatelist" ***
+        #region "account.updatelist"
         /// <summary>
         /// Api info: http://cinemate.cc/help/api/account.updatelist/
         /// </summary>
         /// <returns></returns>
-        public AccountProfileResponseModel GetUpdateList(bool newOnly=false)
+        public AccountUpdateListResponseModel GetUpdateList(bool newOnly = false)
         {
-            throw new NotImplementedException("havent json )=");
             var args = new Dictionary<string, object>
             {
                 { "passkey", _cinemate.ApiKey },
@@ -86,7 +85,7 @@ namespace CinemateApi.Methods
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountProfileResponseModel>(_cinemate.BaseUrl, "account.updatelist", args);
+            return RemoteHelper.DownloadJson<AccountUpdateListResponseModel>(_cinemate.BaseUrl, "account.updatelist", args);
         }
         #endregion
 

@@ -47,13 +47,12 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_GetUpdateList_Test()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
 
             var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
-            var result = cinemate.Account.GetUpdateList(false);
+            var result = cinemate.Account.GetUpdateList(true);
 
             Assert.IsNotNull(result, "result is empty");
-            Assert.IsNotNull(result.UserName, "unexpected result");
         }
 
         [TestMethod]

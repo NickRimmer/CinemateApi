@@ -71,6 +71,7 @@
     <None Include="json_responses\account.auth.json" />
     <None Include="json_responses\account.moviebox.json" />
     <None Include="json_responses\account.profile.json" />
+    <None Include="json_responses\account.updatelist.json" />
     <None Include="json_responses\account.vote.json" />
     <None Include="json_responses\account.watchlist.json" />
     <None Include="json_responses\movie.json" />

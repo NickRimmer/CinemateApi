@@ -14,6 +14,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -60,14 +61,18 @@ namespace CinemateApi.Tools
                 {
                     string jsonString = null;
 
-                    if(sendMethod==HttpMethodEnum.Get)
-                        jsonString = browser.DownloadString(uriBuilder.Uri);
+                    if (sendMethod == HttpMethodEnum.Get)
+                        jsonString =
+                            File.ReadAllText(@"D:\work\c_sharp\CinemateApi\CinemateApi\CinemateApitTests\json_responses\account.updatelist.json");
+                        //jsonString = browser.DownloadString(uriBuilder.Uri);
                     else if (sendMethod == HttpMethodEnum.Post)
                         jsonString = browser.UploadString(uriBuilder.Uri, uriBuilder.Query);
                     else if (sendMethod == HttpMethodEnum.Delete)
                         jsonString = browser.UploadString(uriBuilder.Uri, "DELETE", uriBuilder.Query);
 
                     if(string.IsNullOrWhiteSpace(jsonString)) throw new Exception("can't download json string");
+
+
 
                     return JsonConvert.DeserializeObject<T>(jsonString);
                 }
