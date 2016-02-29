@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://opensource.org/licenses/GPL-2.0</licenseUrl>
+    <projectUrl>https://github.com/NickRimmer/CinemateApi</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Correct work with Api key and Pass key</releaseNotes>
+    <copyright>Copyright (C) 2016 Nick Rimmer</copyright>
+    <tags>Cinemate</tags>
+  </metadata>
+</package>
