@@ -93,7 +93,7 @@ namespace CinemateApi.Methods
 
             var args = new Dictionary<string, object>
             {
-                { "apikey", _cinemate.ApiKey },
+                { "apikey", _cinemate.Properties.ApiKey },
                 { "state", MovieEnumsConverter.GetStringValue(state) },
                 { "order_by", MovieEnumsConverter.GetStringValue(orderBy) },
                 { "order", MovieEnumsConverter.GetStringValue(order) },
@@ -110,7 +110,7 @@ namespace CinemateApi.Methods
             if (dateTo.HasValue) args.Add("to", dateTo.Value.ToString("yyyy.MM.dd"));
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<MovieListResponseModel>(_cinemate.BaseUrl, "movie.list", args);
+            return RemoteHelper.DownloadJson<MovieListResponseModel>(_cinemate.Properties.BaseUrl, "movie.list", args);
         }
         #endregion
 
@@ -124,12 +124,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "apikey", _cinemate.ApiKey },
+                { "apikey", _cinemate.Properties.ApiKey },
                 { "term", searchString },
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<MovieSearchResponseModel>(_cinemate.BaseUrl, "movie.search", args);
+            return RemoteHelper.DownloadJson<MovieSearchResponseModel>(_cinemate.Properties.BaseUrl, "movie.search", args);
         }
         #endregion
 
@@ -143,12 +143,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "apikey", _cinemate.ApiKey },
+                { "apikey", _cinemate.Properties.ApiKey },
                 { "id", id },
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<MovieInfoResponseModel>(_cinemate.BaseUrl, "movie", args);
+            return RemoteHelper.DownloadJson<MovieInfoResponseModel>(_cinemate.Properties.BaseUrl, "movie", args);
         }
         #endregion
     }

@@ -43,12 +43,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "apikey", _cinemate.ApiKey },
+                { "apikey", _cinemate.Properties.ApiKey },
                 { "term", searchName },
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<PersonSearchResponseModel>(_cinemate.BaseUrl, "person.search", args);
+            return RemoteHelper.DownloadJson<PersonSearchResponseModel>(_cinemate.Properties.BaseUrl, "person.search", args);
         }
         #endregion
 
@@ -62,12 +62,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "apikey", _cinemate.ApiKey },
+                { "apikey", _cinemate.Properties.ApiKey },
                 { "id", id },
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<PersonMoviesResponseModel>(_cinemate.BaseUrl, "person.movies", args);
+            return RemoteHelper.DownloadJson<PersonMoviesResponseModel>(_cinemate.Properties.BaseUrl, "person.movies", args);
         }
         #endregion
 
@@ -81,12 +81,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "apikey", _cinemate.ApiKey },
+                { "apikey", _cinemate.Properties.ApiKey },
                 { "id", id },
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<PersonInfoResponseModel>(_cinemate.BaseUrl, "person", args);
+            return RemoteHelper.DownloadJson<PersonInfoResponseModel>(_cinemate.Properties.BaseUrl, "person", args);
         }
         #endregion
     }

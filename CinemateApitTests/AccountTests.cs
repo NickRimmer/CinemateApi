@@ -15,6 +15,7 @@
 using System;
 using System.Linq;
 using CinemateApi.Enums;
+using CinemateApi.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CinemateApitTests
@@ -25,7 +26,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_GetAuth_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var result = cinemate.Account.GetAuth(Constants.UserName, Constants.Password);
 
@@ -37,7 +38,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_GetProfile_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.GetProfile();
 
             Assert.IsNotNull(result, "result is empty");
@@ -49,7 +50,7 @@ namespace CinemateApitTests
         {
             //throw new NotImplementedException();
 
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.GetUpdateList(true);
 
             Assert.IsNotNull(result, "result is empty");
@@ -58,7 +59,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_GetWatchList_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.GetWatchList();
 
             Assert.IsNotNull(result, "result is empty");
@@ -68,7 +69,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_GetMovieBox_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.GetMovieBox();
 
             Assert.IsNotNull(result, "result is empty");
@@ -78,7 +79,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_AddMovieBox_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.AddMovieBox(137456);
 
             Assert.IsNotNull(result, "result is empty");
@@ -88,7 +89,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_DeleteMovieBox_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var movieBox = cinemate.Account.GetMovieBox();
 
             var count_before = movieBox.MovieBox.Count;
@@ -106,7 +107,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_GetVotes_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.GetVotes();
 
             Assert.IsNotNull(result, "result is empty");
@@ -115,7 +116,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_AddVotes_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.AddVote(157582, VoteValueEnum.Negative);
 
             Assert.IsNotNull(result, "result is empty");
@@ -125,7 +126,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Account_DeleteVote_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
             var result = cinemate.Account.DeleteVote(157582);
 
             Assert.IsNotNull(result, "result is empty");

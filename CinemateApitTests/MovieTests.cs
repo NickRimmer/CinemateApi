@@ -25,7 +25,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Movie_GetList_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var result = cinemate.Movie.GetSoonList();
 
@@ -36,7 +36,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Movie_GetSearch_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var result = cinemate.Movie.GetSearch("Дживс и Вустер");
 
@@ -47,7 +47,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Movie_GetInfo_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var resultSearch = cinemate.Movie.GetSearch("Дживс и Вустер");
             Assert.IsNotNull(resultSearch.Movie, "resultSearch movie is empty");

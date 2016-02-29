@@ -62,9 +62,9 @@ namespace CinemateApi.Tools
                     string jsonString = null;
 
                     if (sendMethod == HttpMethodEnum.Get)
-                        jsonString =
-                            File.ReadAllText(@"D:\work\c_sharp\CinemateApi\CinemateApi\CinemateApitTests\json_responses\account.updatelist.json");
-                        //jsonString = browser.DownloadString(uriBuilder.Uri);
+                        //jsonString =
+                            //File.ReadAllText(@"D:\work\c_sharp\CinemateApi\CinemateApi\CinemateApitTests\json_responses\account.updatelist.json");
+                        jsonString = browser.DownloadString(uriBuilder.Uri);
                     else if (sendMethod == HttpMethodEnum.Post)
                         jsonString = browser.UploadString(uriBuilder.Uri, uriBuilder.Query);
                     else if (sendMethod == HttpMethodEnum.Delete)

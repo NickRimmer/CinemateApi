@@ -59,6 +59,7 @@
     <Compile Include="Methods\MovieMethods.cs" />
     <Compile Include="Methods\PersonMethods.cs" />
     <Compile Include="Methods\StatsMethods.cs" />
+    <Compile Include="Models\CinimateProperties.cs" />
     <Compile Include="Models\Remote\AccountUpdateListItemModel.cs" />
     <Compile Include="Models\Remote\AccountVoteModel.cs" />
     <Compile Include="Models\Remote\Image2Model.cs" />

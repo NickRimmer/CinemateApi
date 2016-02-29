@@ -15,6 +15,7 @@
 using System;
 using System.Threading;
 using CinemateApi.Methods;
+using CinemateApi.Models;
 
 namespace CinemateApi
 {
@@ -23,20 +24,15 @@ namespace CinemateApi
     /// </summary>
     public class Cinemate
     {
-        /// <summary>
-        /// Base url for requests
-        /// </summary>
-        internal string BaseUrl { get; private set; }
+		/// <summary>
+		/// Cinimate properties for api
+		/// </summary>
+		public CinimateProperties Properties { get; private set; }
 
-        /// <summary>
-        /// Api key for access to API
-        /// </summary>
-        internal string ApiKey { get; private set; }
-
-        /// <summary>
-        /// Collection of "movie" methods
-        /// </summary>
-        public MovieMethods Movie;
+		/// <summary>
+		/// Collection of "movie" methods
+		/// </summary>
+		public MovieMethods Movie;
 
         /// <summary>
         /// Collection of "stats" methods
@@ -78,16 +74,14 @@ namespace CinemateApi
         /// </summary>
         /// <param name="baseUrl">base url for requests</param>
         /// <param name="apiKey">api key for access to API</param>
-        public Cinemate(string baseUrl, string apiKey=null)
+        public Cinemate(CinimateProperties properties)
         {
-            BaseUrl = baseUrl;
-            ApiKey = apiKey;
+	        Properties = properties;
 
             Movie = new MovieMethods(this);
             Stats = new StatsMethods(this);
             Person = new PersonMethods(this);
             Account = new AccountMethods(this);
         }
-
     }
 }

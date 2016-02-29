@@ -50,7 +50,7 @@ namespace CinemateApi.Methods
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountResponseModel>(_cinemate.BaseUrl, "account.auth", args);
+            return RemoteHelper.DownloadJson<AccountResponseModel>(_cinemate.Properties.BaseUrl, "account.auth", args);
         }
         #endregion
 
@@ -63,11 +63,11 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey },
+                { "passkey", _cinemate.Properties.PassKey },
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountProfileResponseModel>(_cinemate.BaseUrl, "account.profile", args);
+            return RemoteHelper.DownloadJson<AccountProfileResponseModel>(_cinemate.Properties.BaseUrl, "account.profile", args);
         }
         #endregion
 
@@ -80,12 +80,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey },
+                { "passkey", _cinemate.Properties.PassKey },
                 { "newonly" , newOnly ? 1 : 0}
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountUpdateListResponseModel>(_cinemate.BaseUrl, "account.updatelist", args);
+            return RemoteHelper.DownloadJson<AccountUpdateListResponseModel>(_cinemate.Properties.BaseUrl, "account.updatelist", args);
         }
         #endregion
 
@@ -98,11 +98,11 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey }
+                { "passkey", _cinemate.Properties.PassKey }
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountWatchListResponseModel>(_cinemate.BaseUrl, "account.watchlist", args);
+            return RemoteHelper.DownloadJson<AccountWatchListResponseModel>(_cinemate.Properties.BaseUrl, "account.watchlist", args);
         }
         #endregion
 
@@ -115,13 +115,13 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey }
+                { "passkey", _cinemate.Properties.PassKey }
             };
 
             if (page.HasValue) args.Add("page", page.Value < 0 ? 0 : page.Value);
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountMovieBoxResponseModel>(_cinemate.BaseUrl, "account.moviebox", args);
+            return RemoteHelper.DownloadJson<AccountMovieBoxResponseModel>(_cinemate.Properties.BaseUrl, "account.moviebox", args);
         }
 
         /// <summary>
@@ -132,12 +132,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey },
+                { "passkey", _cinemate.Properties.PassKey },
                 { "movie_id", movieId }
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountMovieBoxResponseModel>(_cinemate.BaseUrl, "account.moviebox", args, HttpMethodEnum.Delete);
+            return RemoteHelper.DownloadJson<AccountMovieBoxResponseModel>(_cinemate.Properties.BaseUrl, "account.moviebox", args, HttpMethodEnum.Delete);
         }
 
         /// <summary>
@@ -148,12 +148,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey },
+                { "passkey", _cinemate.Properties.PassKey },
                 { "movie_id", movieId }
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountMovieBoxResponseModel>(_cinemate.BaseUrl, "account.moviebox", args, HttpMethodEnum.Post);
+            return RemoteHelper.DownloadJson<AccountMovieBoxResponseModel>(_cinemate.Properties.BaseUrl, "account.moviebox", args, HttpMethodEnum.Post);
         }
         #endregion
 
@@ -166,14 +166,14 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey }
+                { "passkey", _cinemate.Properties.PassKey }
             };
 
             if (page.HasValue) args.Add("page", page < 0 ? 0 : page);
             if (filter.HasValue) args.Add("filter", (short) filter);
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountVoteResponseModel>(_cinemate.BaseUrl, "account.votes", args);
+            return RemoteHelper.DownloadJson<AccountVoteResponseModel>(_cinemate.Properties.BaseUrl, "account.votes", args);
         }
 
         /// <summary>
@@ -184,13 +184,13 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey },
+                { "passkey", _cinemate.Properties.PassKey },
                 { "movie_id", movieId },
                 { "value", (short) value }
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountVoteResponseModel>(_cinemate.BaseUrl, "account.votes", args, HttpMethodEnum.Post);
+            return RemoteHelper.DownloadJson<AccountVoteResponseModel>(_cinemate.Properties.BaseUrl, "account.votes", args, HttpMethodEnum.Post);
         }
 
         /// <summary>
@@ -201,12 +201,12 @@ namespace CinemateApi.Methods
         {
             var args = new Dictionary<string, object>
             {
-                { "passkey", _cinemate.ApiKey },
+                { "passkey", _cinemate.Properties.PassKey },
                 { "movie_id", movieId }
             };
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<AccountVoteResponseModel>(_cinemate.BaseUrl, "account.votes", args, HttpMethodEnum.Delete);
+            return RemoteHelper.DownloadJson<AccountVoteResponseModel>(_cinemate.Properties.BaseUrl, "account.votes", args, HttpMethodEnum.Delete);
         }
         #endregion
     }

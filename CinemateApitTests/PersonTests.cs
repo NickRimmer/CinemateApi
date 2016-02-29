@@ -23,7 +23,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Person_GetSearch_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var result = cinemate.Person.GetSearch("Хью Лори");
 
@@ -35,7 +35,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Person_GetMovies_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var result = cinemate.Person.GetMovies(2103);
 
@@ -47,7 +47,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Person_GetInfo_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var result = cinemate.Person.GetInfo(2103);
 

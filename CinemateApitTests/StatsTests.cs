@@ -22,7 +22,7 @@ namespace CinemateApitTests
         [TestMethod]
         public void Stats_GetNew_Test()
         {
-            var cinemate = new CinemateApi.Cinemate(Constants.BaseUrl, Constants.ApiKey);
+            var cinemate = new CinemateApi.Cinemate(Constants.Properties);
 
             var result = cinemate.Stats.GetNew();
             Assert.IsNotNull(result, "result stats.new is empty");

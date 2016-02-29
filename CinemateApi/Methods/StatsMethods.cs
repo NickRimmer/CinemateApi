@@ -44,7 +44,7 @@ namespace CinemateApi.Methods
             var args = new Dictionary<string, object>();
 
             _cinemate.BeginWaitForNextExecute();
-            return RemoteHelper.DownloadJson<StatsNewResponseModel>(_cinemate.BaseUrl, "stats.new", args);
+            return RemoteHelper.DownloadJson<StatsNewResponseModel>(_cinemate.Properties.BaseUrl, "stats.new", args);
         }
         #endregion
     }
