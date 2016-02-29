@@ -8,10 +8,14 @@
     <owners>$author$</owners>
     <licenseUrl>http://opensource.org/licenses/GPL-2.0</licenseUrl>
     <projectUrl>https://github.com/NickRimmer/CinemateApi</projectUrl>
+		<iconUrl>http://c.cinemate.cc/media/images/avatars/a/admin.big.jpg</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Correct work with Api key and Pass key</releaseNotes>
+    <releaseNotes>New version of Newtonsoft.Json with unspecifed property</releaseNotes>
     <copyright>Copyright (C) 2016 Nick Rimmer</copyright>
     <tags>Cinemate</tags>
+		<dependencies>
+			<dependency id="Newtonsoft.Json" version="7.0.1" />
+		</dependencies>
   </metadata>
 </package>
