@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/NickRimmer/CinemateApi</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Correct work with Api key and Pass key</releaseNotes>
+    <releaseNotes>New version of Newtonsoft.Json</releaseNotes>
     <copyright>Copyright (C) 2016 Nick Rimmer</copyright>
     <tags>Cinemate</tags>
   </metadata>
